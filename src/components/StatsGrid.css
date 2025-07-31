@@ -1,0 +1,100 @@
+.stats-section {
+  background-color: #f0fdf4;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.stats-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #14532d;
+}
+
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.stat-box {
+  background-color: #dcfce7;
+  width: 180px;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
+  transition: transform 0.3s ease;
+  flex: 1 1 calc(100% / 6 - 1rem); 
+  max-width: 250px;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #065f46;
+}
+
+.stat-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #064e3b;
+  text-align: left;
+}
+
+@media screen and (max-width: 425px) {
+  .stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .stat-box {
+    flex: 0 0 calc(50% - 0.5rem);
+    max-width: calc(50% - 0.5rem);
+    min-width: auto;
+  }
+
+  .stat-number {
+    font-size: 1.2rem; /* Smaller number text */
+  }
+
+  .stat-label {
+    font-size: 0.75rem; /* Smaller label text */
+  }
+
+  .stats-heading {
+    font-size: 1.5rem; /* Reduce heading size */
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .stats-grid {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .stat-box {
+    flex: 0 0 calc(33.333% - 0.75rem);
+    max-width: calc(33.333% - 0.75rem);
+    min-width: auto;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+ 
+
+  .stat-box {
+   flex: 1 1 calc(100% / 6 - 1rem); 
+  }
+}
+
+
+

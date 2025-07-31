@@ -1,0 +1,51 @@
+.empowering-section {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+}
+
+.empowering-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.empowering-section p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.logo-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.logo-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* ✅ Mobile Responsive Font Sizes */
+@media screen and (max-width: 425px) {
+  .empowering-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .empowering-section p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-logo {
+    height: 50px;
+  }
+}
