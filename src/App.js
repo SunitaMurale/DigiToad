@@ -16,7 +16,6 @@ function App() {
       <HeroSlider />
       <Services />
       <StatsGrid />
-      {/* <WhatWeAreLookingFor /> */}
       <EmpoweringSection />
       <Footer />
     </div>
